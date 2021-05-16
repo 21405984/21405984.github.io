@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    {% block css %}
+    {% endblock %}
+
+</head>
+
+<body>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="jquery/shrink.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><script  src="./shoppingCart.js"></script>
+
+    {{ include('header.twig.html') }}
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="form-header" id="exampleModalLabel">Cart</h5>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: £<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="Basket" button type="button" class="btn btn-primary">Go to checkout</a>
+      </div>
+    </div>
+  </div>
+</div> 
+    {% block content %}
+    {% endblock %}
+
+
+
+    <!--Footer with social media icons-->
+    <footer class="mt-3">
+        © G28 Supermarket 2021-Cannot be used without - Connect with us on... <a href="https://en-gb.facebook.com/">
+            <img src="images/FB-f-Logo__blue_50.png" width="50" height="50" class="social"></a> <a
+            href="https://twitter.com">
+            <img src="images/Twitter_Logo_White_On_Blue.png" width="52" height="50" class="social"></a> <a
+            href="https://www.instagram.com">
+            <img src="images/glyph-logo_May2016.png" width="50" height="50" class="social"></a>
+    </footer>
+</body>
+
+</html>

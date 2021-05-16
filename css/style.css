@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+button, p{
+    font-family: impact, sans-serif !important
+}
+
+
+
+/* Class .navbar-default sets the padding at 30px each, and the transition is based on padding. When the navbar gets resized on scroll, the value is shrunk by 5px. This is done by adding child class navbar-shrink.*/
+
+
+   .navbar-default{
+       transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+   }
+
+        .shrink {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        min-height: 55px !important;
+    }
+.shrink .nav-link {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;       
+    }
+
+.logo {
+    background: url("../images/Logo.jpg") no-repeat;
+    width: 150px;
+    height: 150px;
+    transition: all 0.4s ease-in-out 0s;
+}
+.tiny .logo {
+    background: url("../images/Logo.jpg") no-repeat !important;
+    width: 40px !important;
+    height: 40px !important;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.cart-button {
+            margin-left: auto;
+        }
+
+/* / Navbar styles*/
+
+.nav-link {
+    padding:45px 26px;
+	font-size: 20px !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    color: #ebe834!important;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.tiny .nav-link {
+    padding:25px 13px;
+	font-size: 13px !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    color: #ebe834!important;
+	transition: all 0.4s ease-in-out 0s;
+}
+/*Orange Background backgrounbd layer to be used inside containers*/
+.orange-bck{
+
+    background-color: #ebe834!important;
+    height: auto;
+}
+/*White backgrounbd layer to be used inside containers*/
+.white-bck {
+	background-color: aliceblue!important;
+	height: 90%
+}
+/*Font style used for majority of text*/
+.main-info{
+    font-family: impact, sans-serif !important;
+	color: #FFFFFF
+}
+/*Text for small and header info*/
+.info-text{
+	font-family: Arial !important;
+}
+/*More text styles*/
+.form-header{
+    font-size: 45px !important;
+    font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', 'sans-serif';
+    color: #FFFFFF;
+}
+
+.form-text{
+	font-family:"Ariel";
+	font-size: 20px!important;
+	color: #FFFFFF
+	
+	
+}
+
+/*Background image placed in containers*/
+.bck-img{
+    color: #FFFFFF!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/grocery-aisle.jpg")
+}
+
+
+
+/*Card Spacing and and padding styles*/
+.card-block {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.col-centered{
+   float: none;
+   margin: 0 auto;
+}
+/* Text Styles for reflective webpage cards*/
+.cardtext{
+    font-family: Arial !important;
+    font-size: 15px !important;
+    color: #ebe834;
+
+
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #ebe834;
+  border-color: #ebe834;
+}
+.orderButton{
+ font-family: Arial;
+ color: #ebe834;
+}
+
+.cart-button {
+  float: right;
+}
+
+/*Footer styles*/
+footer {
+background-color: #FFFFFF;
+	color: #ebe834;
+	height: 60px;
+}
+.social {
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
